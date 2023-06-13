@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container p-5 mb-2">
+        <div class="row align-items-center mb-2 ">
+          <!-- <div class="col-auto">
+            Поле для ввода
+          </div> -->
+          <div class="col">
+            <input  id="textField" class="form-control" />
+          </div>
+          
+        </div>
+        
+        
+        <div class="row  mb-2">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">7</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">8</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">9</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-warning w-100" onclick="onButtonClickAny(this)">*</button>
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-2">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">4</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">5</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">6</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-warning w-100" onclick="onButtonClickAny(this)">/</button>
+            </div>
+          </div>
+
+          <div class="row align-items-center mb-2">
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">1</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">2</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">3</button>
+            </div>
+            <div class="col d-flex justify-content-start">
+                <button id="text" class="btn btn-warning w-100" onclick="onButtonClickAny(this)">+</button>
+            </div>
+        </div>
+
+            <div class="row align-items-center mb-2">
+                <div class="col-9 d-flex justify-content-start">
+                    <button id="text" class="btn btn-primary w-100" onclick="onButtonClickAny(this)">0</button>
+                </div>
+                <div class="col">
+                    <button class="btn btn-warning w-100" onclick="onButtonClickSolve(this)">=</button>
+                  </div>
+           </div>
+           
+           
+           
+           
+           <div class="row">
+            <div class="col d-flex">
+                <button id="text" class="btn btn-warning w-100 " style= "color:rgb(24, 99, 197); background-color: #6e7c2e3d; "onclick="onButtonClickDelete(this)">Стереть все</button>
+            </div>
+        </div>
+      </div>
+      
+      <script>
+         function onButtonClickAny(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = textField.value + btn.innerText
+        } 
+        function onButtonClickSolve(btn) {
+            let textField = document.getElementById("textField");
+            let code = textField.value;
+            textField.value = eval(code);
+        }
+        function onButtonClickDelete(btn) {
+            let textField = document.getElementById("textField");
+            textField.value = "";
+        }
+       
+
+     </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

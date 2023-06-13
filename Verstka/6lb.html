@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+</head>
+<body>
+    <div  style="display: flex;">
+    
+        <div class="column" style="align-items: flex-end; justify-content:flex-end;">
+         
+            <i class="fas fa-2x fa-dog block"></i>
+        </div>
+            
+        <div class="column" style="align-items: flex-end; justify-content:flex-end; justify-content: space-evenly; ">
+            <i class="fas fa-2x fa-dog block"></i>
+            <i class="fas fa-2x fa-kiwi-bird block"></i>
+        </div>
+
+        <div class="column" style="align-items: flex-start; justify-content: space-around;">
+            <i class="fas fa-2x fa-cat block"></i>
+            <i class="fas fa-2x fa-kiwi-bird block"></i>
+        </div> 
+
+        <div class="column" style="align-items: flex-start; justify-content:flex-end;">
+            <i class="fas fa-2x fa-dog block"></i> 
+            <i class="fas fa-2x fa-cat block"></i>
+            
+        </div>      
+      
+    
+    </div>
+    <div style="display: flex;">
+    
+        <div class="column" style="align-items: flex-end; justify-content: center; ">
+            <i class="fas fa-2x fa-dog  block"></i> 
+            <i class="fas fa-2x fa-kiwi-bird block"></i>
+            <i class="fas fa-2x fa-cat block"></i>
+            
+        </div>
+            
+        <div class="column" style="align-items: center; flex-basis: 432px; justify-content: center;">
+            <i class="fas fa-2x fa-dog  block"></i> 
+            <i class="fas fa-2x fa-cat block"></i>
+
+        </div>
+        <div class="column" style="align-items: flex-start;">
+            <i class="fas fa-2x fa-dog  block"></i> 
+           
+        </div>  
+          
+        
+    </div>
+    <div style="display: flex;">
+        
+        <div class="column" style="align-items: flex-end;">
+            <i class="fas fa-2x fa-dog  block"></i>
+        </div>
+        <div class="column">
+            <i class="fas fa-2x fa-dog block"></i> 
+            <i class="fas fa-2x fa-cat block"></i>
+            
+        </div>
+            
+        <div class="column" style="justify-content: space-between;  ">
+            <i class="fas fa-2x fa-dog block"></i>
+            <i class="fas fa-2x fa-kiwi-bird block"></i>
+            <i class="fas fa-2x fa-cat block"></i>
+            
+        </div>
+        <div class="column" style="justify-content: space-around;">
+            <i class="fas fa-2x fa-cat block"></i>
+            <i class="fas fa-2x fa-kiwi-bird block"></i>
+        </div>  
+
+
+
+
+<style>
+       .column { /* переименовал в column, не забудь переименовать выше, где class="row" */
+       
+       display: flex;
+        flex-direction: column; 
+        
+        margin: 0.25rem; /* оступы вокруг блоков */
+        padding: 0.5rem; /* отступы внутри блоков */
+        height:200px;
+        flex-basis: 200px;
+        background-color: rgb(252, 252, 0);
+        
+        margin-bottom: 0.5rem;"
+    }
+    .block {
+        border: 1px solid black; 
+        padding: 0.1em; 
+        margin-bottom: 0.1em;
+        
+          }
+
+</style>
+
+</body>
+</html>

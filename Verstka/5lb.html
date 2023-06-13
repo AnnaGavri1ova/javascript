@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+<body>
+    <style>
+        .block {
+            border: 1px solid black;
+            margin-bottom: 0.5rem;
+
+            margin: 0.25rem; /* оступы вокруг блоков */
+            padding: 0.5rem; /* отступы внутри блоков */
+            flex-grow: 1;
+            flex-basis: 0;
+        }
+    
+        .row {
+            display: flex;
+        }
+        .colorfish{
+        border: 1px solid black;
+        margin-bottom: 0.5rem;
+        margin: 0.25rem; /* оступы вокруг блоков */
+        padding: 0.5rem; /* отступы внутри блоков */
+        flex-grow: 3;
+        flex-basis: 0;
+        background-color: aqua;
+        text-align: center;
+          }
+        .colortree {
+        border: 1px solid black;
+        margin-bottom: 0.5rem;
+        margin: 0.25rem; /* оступы вокруг блоков */
+        padding: 0.5rem; /* отступы внутри блоков */
+        flex-grow: 0;
+        flex-basis: auto;
+        background-color: rgb(101, 228, 101);
+        text-align: center;
+         }
+
+    </style>
+    <div class="row">
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            тут собачка живет 
+        <i class="fas fa-2x fa-dog"></i>
+            
+        </div>
+        <div class="block" style="flex-grow: 2;  text-align: center; ">
+            <i class="fa-sharp fa-2x fa-solid fa-cat"></i>
+            <i class="fa-sharp fa-2x fa-solid fa-cat"></i>
+            <i class="fa-sharp fa-2x fa-solid fa-cat"></i>
+        </div>
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fas fa-2x fa-kiwi-bird"></i>
+        дом киви
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-sharp fa-2x fa-solid fa-crow"></i>
+            ворона
+        </div>
+
+        <div class="block" style="flex-grow: 2; text-align: center; ">
+            <i class="fas fa-2x fa-dog"></i>
+            <i class="fas fa-2x fa-dog"></i>
+    
+        </div>
+
+        <div class="block" style="flex-grow: 0; flex-basis: auto;" >
+            <i class="fa-sharp fa-2x fa-solid fa-dove"></i>
+            голубь
+        </div>
+
+        <div class="block" style="flex-grow: 1; ">
+            <i class="fas fa-2x fa-horse"></i>
+            лошадка
+        </div>
+    </div>
+
+    
+    <div class="row">
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-2x fa-frog"></i>
+        </div> 
+    
+        <div class="colorfish" >
+            <i class="fas fa-2x fa-fish"></i>
+        </div>
+    
+        <div class="colorfish" >
+            <i class="fas fa-2x fa-fish"></i>
+        </div>
+    
+        <div class="colorfish" >
+            <i class="fas fa-2x fa-fish"></i>
+        </div>
+
+        <div class="block" style="flex-grow: 0; flex-basis: auto;">
+            <i class="fa-solid fa-2x fa-frog"></i>
+        </div> 
+    </div>      
+<div class="row">
+    <div class="colortree" >
+        <i class="fas fa-2x fa-fish"></i>
+    </div>
+    <div class="colortree" >
+        <i class="fas fa-2x fa-fish"></i>
+    </div>
+    <div class="colortree" >
+        <i class="fas fa-2x fa-fish"></i>
+    </div>
+    <div class="colortree" >
+        <i class="fas fa-2x fa-fish"></i>
+    </div>
+    <div class="block" style="text-align: center;">
+        <i class="fa-sharp fa-2x fa-solid fa-crow"></i>
+    </div>
+</div>  
+</body>
+</html>

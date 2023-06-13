@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+        font-family: 'Times New Roman', Times, serif; /* Гарнитура текста */ 
+        font-size: 120%; /* Размер шрифта в процентах */ 
+       } 
+            p {
+        font-family: Verdana, Arial, Helvetica, sans-serif; 
+        font-size: 20pt; /* Размер шрифта в пунктах */ 
+        }   
+    </style>
+</head>
+<body>
+    <div class="paragraph paragraph1 bordered ">
+        <h1>
+            <span class=" word bordered" style="display: inline-block; padding: 8px; background: red;">Любовь</span>  <span class=" word bordered">долготерпит</span>,  
+        <span class=" word bordered">милосердствует</span>, 
+        любовь <span class=" word bordered">не завидует</span>, <br> любовь <span class=" word bordered">не превозносится</span>,
+         <span class=" word bordered">не гордится</span>,
+         <span class=" word bordered">не бесчинствует</span>, <span class=" word bordered"> не ищет своего</span>,<br>
+         <span class=" word bordered">не раздражается</span>, <span class=" word bordered">не мыслит зла</span>, <br>
+         <span class=" word bordered">не радуется неправде, а сорадуется истине;</span> <br>
+        <span class=" word bordered"> всё покрывает, всему верит, всего надеется, всё переносит.</span><br>
+        <span style="display: inline-block; padding: 8px; background: red;">Любовь</span>  <span class=" word bordered">никогда не перестаёт</span>, хотя и пророчества прекратятся, и языки умолкнут, и знание упразднится.
+    <br> </h1>
+   <p><span class="book"style = "background: linear-gradient(90deg, #bd0a9f, #eeff00)">Библия: — 1-е послание Коринфянам 13 глава</span>
+   </p> 
+    </div>
+    
+    <div class="paragraph paragraph2">
+       
+    
+           <h1>1 <span class=" word bordered">Псалом Давида.</span> Блажен муж, который не ходит на совет нечестивых и не стоит на пути грешных и не сидит в собрании развратителей,
+            <br>
+            2 но в законе Господа воля его, и о законе Его размышляет он день и ночь!
+            <br>
+            3 И будет он как дерево, посаженное при потоках вод, которое приносит плод свой во время своё и лист которого не вянет; и во всём, что он ни делает, успеет.
+            <br>
+            4 Не так — нечестивые: но они — как прах, возметаемый ветром.
+            <br>
+            5 Потому не устоят нечестивые на суде и грешники — в собрании праведных.
+            <br>
+            6 <span class=" word bordered">Ибо знает Господь путь праведных, а путь нечестивых погибнет.</span>
+            <br></h1> 
+           <p><span style = "background: linear-gradient(90deg, #0abd31, #ff8800);display: inline-block; padding: 8px;">Библия: Псалтирь — Псалом 1</span> </p> 
+        </div>
+    
+    <div class="paragraph3 bordered">
+        5 <span class=" word bordered">Надейся на Господа </span> всем сердцем твоим, и не полагайся на разум твой.
+        <br>
+        6 Во всех путях твоих <span class=" word bordered">познавай Его </span>, и Он направит стези твои.
+        <br>
+        7 Не будь мудрецом в глазах твоих; <span class=" word bordered">бойся Господа и удаляйся от зла</span>:
+        <br>
+        8 это будет здравием для тела твоего и питанием для костей твоих.
+        <br>
+        9 <span  class=" word bordered"> Чти Господа от имения твоего и от начатков всех прибытков твоих</span>,
+        <br>
+        10 и наполнятся житницы твои до избытка, и точила твои будут переливаться новым вином.
+        <p>
+        <span style = "background: linear-gradient(90deg, #bd0a9f, #eeff00);display: inline-block; padding: 8px;">Библия: Притчи 3 глава</span>
+         
+    </div>
+    <style>
+
+        .paragraph {
+            margin: 8px; 
+            padding: 32px 32px; 
+            box-sizing: border-box;
+        } 
+
+        .paragraph1 {
+            background: #ffee007e ; 
+            text-align: center;
+            border: 5px solid rgb(221, 126, 1);
+        }
+        .paragraph1.bordered {
+            margin: 16px 0;
+            border-width: 6px;
+        }
+        .paragraph2 {
+            width: 500px;
+            background: linear-gradient(90deg, #bd3d02a2, #e478d575);
+            text-align: right;
+            border: 5px solid rgb(253, 11, 11);
+        }
+
+        .paragraph2.bordered {
+            margin: 16px 0;
+            border-width: 6px;
+        }
+
+        .paragraph3 {
+            width: 50%; 
+            box-sizing: border-box;
+            background: #ff60bdc7 ; 
+            text-align: left; 
+            margin: 10px; 
+            padding: 8px 16px;
+             border: 3px solid rgb(235, 15, 15);
+        }
+        
+        .paragraph3.bordered {
+            margin: 32px 0;
+            border-width: 6px;
+        }
+
+        .word {
+            
+            transition: all 0.3s; /* all означает что сглаживаем все преобразования, 0.3s -- это скорость перехода в секундах */
+        }
+        .word:hover {
+            background: rgb(255, 217, 0);
+            transition: all 0.3s; /* all означает что сглаживаем все преобразования, 0.3s -- это скорость перехода в секундах */
+            cursor: pointer;
+            border-width: 4px; /* меняю ширину границы, да можно только ширину указать */
+            padding: 6px; /* меняю отступы от границы */
+            box-shadow: 0 0 30px rgb(36, 196, 15); /* делаю тень белой и побольше, получается иллюзия свечения */
+        }
+        
+        .bordered {
+        /* в этот новый стиль вынес все связанной с блоком и рамкой */
+             border: 2px dashed black;
+            display: inline-block; /* это мы уже знаем, просто чтобы прилагательные были как блоки */
+            margin: 2px; /* отступы со всех сторон */
+            padding: 0 4px; /* отступы внутри границы */
+            border-radius: 8px; /* закруглим границы */
+            box-shadow: 0 0 8px grey !important; /* добавим тень, 0 0 это ее сдвиг относительно блока, 8px радиус тени ну и цает */
+        }
+
+        .paragraph1 .word{
+            background-color: red;
+        }
+
+        .paragraph1:hover .word:hover{
+            background: rgb(195, 135, 235);
+           
+        }
+        
+        .paragraph2:hover .word:hover{
+            background: rgb(195, 135, 235);
+           
+        }   
+        .paragraph3:hover .word:hover{
+            background: rgb(195, 135, 235);
+           
+        }
+        .paragraph1 .word {
+        background: rgb(141, 206, 21);
+        }
+        .paragraph2 .word {
+        background: rgb(206, 21, 107);
+        }
+        .paragraph3 .word {
+        background: rgb(205, 194, 223);
+        }
+        .paragraph1:hover .word{
+            background: rgb(241, 15, 15);
+         }
+
+         .paragraph2:hover .word{
+            background: rgb(241, 15, 15);
+         }
+
+         .paragraph3:hover .word{
+            background: rgb(241, 15, 15);
+         }
+    </style>
+    
+       
+</body>
+</html>
+ 
